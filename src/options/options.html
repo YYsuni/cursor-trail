@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cursor Trail - Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cursor Trail</h1>
+      <section class="grid">
+        <label>Color<input id="color" type="color" value="#00D3A7" /></label>
+        <label>Size<input id="size" type="number" min="2" max="40" value="8" /></label>
+        <label>Count<input id="count" type="number" min="4" max="48" value="12" /></label>
+        <label>Decay<input id="decay" type="number" step="0.01" min="0.02" max="0.4" value="0.12" /></label>
+      </section>
+      <div class="row">
+        <button id="save">Save</button>
+        <span id="status" role="status" aria-live="polite"></span>
+      </div>
+    </main>
+    <script src="options.js"></script>
+  </body>
+  </html>
+
+

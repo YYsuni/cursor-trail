@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Cursor Trail",
+  "description": "Adds a customizable cursor trail to your cursor across websites.",
+  "version": "0.1.0",
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "src/options/options.html",
+  "action": {
+    "default_title": "Cursor Trail",
+    "default_popup": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
